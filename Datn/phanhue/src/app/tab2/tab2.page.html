@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+     <ion-item>
+    <ion-label>Loại Thép</ion-label>
+    <ion-select value="" cancelText="Cancel" okText="Ok" [(ngModel)]="cb" >
+      <ion-select-option value="210000"id="CB240_T">CB240-T</ion-select-option>
+      <ion-select-option value="260000"id="CB300_T">CB300-T</ion-select-option>
+      <ion-select-option value="260000"id="CB300_V">CB300-V</ion-select-option>
+      <ion-select-option value="350000"id="CB400_V">CB400-V</ion-select-option>
+      <ion-select-option value="4350000"id="CB500_V">CB500-V</ion-select-option>
+    </ion-select>
+  </ion-item>
+ <ion-item>
+  <ion-label >Chiều cao đài h: </ion-label>
+  <ion-input [(ngModel)]="h" id="h" type="number"></ion-input>
+  <ion-label>m</ion-label>
+
+</ion-item>
+<ion-item>
+  <ion-label >Bề rộng đài : </ion-label>
+  <ion-input [(ngModel)]="b" id="b" type="number"></ion-input>
+  <ion-label>m</ion-label>
+
+</ion-item>
+<ion-item>
+  <ion-label >Giá trị lớp bảo vệ a : </ion-label>
+  <ion-input [(ngModel)]="a" id="a" type="number"></ion-input>
+  <ion-label>m</ion-label>
+
+</ion-item>
+<ion-item>
+  <ion-label>Giá trị M :</ion-label>
+  <ion-input [(ngModel)]="momen" id="M" type="number"></ion-input>
+  <ion-label>KN.m</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Kết quả As : </ion-label>
+  <ion-input [(ngModel)]="ketqua" id="ketqua"></ion-input>
+  <ion-label>cm2</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Hàm lượng cốt thép : </ion-label>
+  <ion-input [(ngModel)]="hamluong" id="hamluong"></ion-input>
+  <ion-label>%</ion-label>
+</ion-item>
+</ion-content>
+<ion-footer>
+  <ion-button expand ="full"(click)="tinhtoan()">Tính toán </ion-button>
+  
+</ion-footer>

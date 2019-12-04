@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'dashboard-tabs',
+    loadChildren: () => import('./dashboard-tabs/dashboard-tabs.module').then( m => m.DashboardTabsPageModule)
   }
 ];
 
